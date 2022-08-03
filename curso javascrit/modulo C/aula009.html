@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas aula 009</title>
+    <style>
+      body{
+        background:rgb(165, 245, 245);
+        color: rgb(45, 30, 213);
+        font:  normal 16pt Arial;
+    }  
+
+    </style>
+</head>
+<body>
+    <h1>HOJE e dia DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p> Aprendendo sobre na aula</p>
+    <P>Apredendo a usar o <strong>DOM</strong> em javascript.</P>
+    <div id = "msg"> CLIQUE AQUI</div>
+<script>
+var corpo = window.document.body
+var p1 = window.document.getElementsByTagName('p')[1]
+var d  = window.document.getElementById('msg')
+window.document.write(p1.innerText)
+p1.style.color = 'red'
+d.style.background = 'green'
+
+</script>
+</body>
+</html>
